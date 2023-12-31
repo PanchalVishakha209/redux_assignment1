@@ -1,0 +1,21 @@
+MODULE: 13 React – Applying Redux
+
+Q-1. What is Redux?
+ANS.Redux is an open-source JavaScript library for managing and centralizing application state.
+    It is most commonly used with libraries such as React or Angular for building user interfaces. 
+    Similar to Facebook's Flux architecture, it was created by Dan Abramov and Andrew Clark.
+
+Q-2. What is Redux Thunk used for?
+ANS. Redux Thunk middleware allows you to write action creators that return a function instead of an action. 
+     The thunk can be used to delay the dispatch of an action, or to dispatch only if a certain condition is met. 
+     The inner function receives the store methods dispatch and getState as parameters.
+
+Q-3. What is Pure Component? When to use Pure Component over Component?
+ANS. A React component is considered pure if it renders the same output for the same state and props. 
+     For this type of class component, React provides the PureComponent base class.
+     Class components that extend the React. PureComponent class are treated as pure components.
+
+Q-4. What is the second argument that can optionally be passed tosetState and what is
+its purpose?
+ANS.The second parameter to setState() is an optional callback function that will be executed once setState is completed and the component is re-rendered. 
+    Generally we recommend using componentDidUpdate() for such logic instead.
